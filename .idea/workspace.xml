@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dda26167-97b2-4411-80f4-e6e4911b7159" name="Changes" comment="Завершение двусвязных списков, добавление новых сортировок">
+    <list default="true" id="dda26167-97b2-4411-80f4-e6e4911b7159" name="Changes" comment="Добавление queue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сортировки/insertion_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Сортировки/insertion_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сортировки/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Сортировки/merge_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сортировки/sorts.md" beforeDir="false" afterPath="$PROJECT_DIR$/Сортировки/sorts.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Структуры данных/data_structures.md" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/data_structures.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Структуры данных/dlinked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/dlinked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Структуры данных/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Структуры данных/queue_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/queue_linked_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +72,7 @@
     "Python.queue_list.executor": "Run",
     "Python.quicksort.executor": "Run",
     "Python.selection_sort.executor": "Run",
+    "Python.stack_linked_list.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -96,7 +103,7 @@
       <updated>1710932938098</updated>
       <workItem from="1710932950722" duration="7303000" />
       <workItem from="1710957739942" duration="3356000" />
-      <workItem from="1711081991796" duration="17450000" />
+      <workItem from="1711081991796" duration="19306000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -146,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711116764297</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавление queue">
+      <option name="closed" value="true" />
+      <created>1711119720415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711119720415</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,11 +171,13 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Добавление двусвязных списков" />
     <MESSAGE value="Завершение двусвязных списков, добавление новых сортировок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Завершение двусвязных списков, добавление новых сортировок" />
+    <MESSAGE value="Добавление queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление queue" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AiSD_FinUn$countsort.coverage" NAME="countsort Coverage Results" MODIFIED="1710935420575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$selection_sort.coverage" NAME="selection_sort Coverage Results" MODIFIED="1711111866470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
+    <SUITE FILE_PATH="coverage/AiSD_FinUn$stack_linked_list.coverage" NAME="stack_linked_list Coverage Results" MODIFIED="1711120913353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$linked_list.coverage" NAME="linked_list Coverage Results" MODIFIED="1710937500056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1711108036776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$bubble_sort.coverage" NAME="bubble_sort Coverage Results" MODIFIED="1710933826223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />

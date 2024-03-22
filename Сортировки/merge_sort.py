@@ -5,8 +5,8 @@ def merge_sort(data):
         right = data[mid:]
         merge_sort(left)
         merge_sort(right)
-        i, j, k = 0, 0, 0 # i — индекс левой части, j — индекс правой части, k — общий индекс
-        while i < len(left) and j < len(right): # в этом цикле сравниваются два массива и "сливаются" в один
+        i, j, k = 0, 0, 0  # i — индекс левой части, j — индекс правой части, k — общий индекс
+        while i < len(left) and j < len(right):  # в этом цикле сравниваются два массива и "сливаются" в один
             if left[i] < right[j]:
                 data[k] = left[i]
                 i += 1

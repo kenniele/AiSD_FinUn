@@ -10,14 +10,14 @@ class Node:
 
 class DLinkedList:  # Двусвязный список
     def __init__(self, head, tail):
-        self.head = head  # Ссылка на начальный элемент двусвязного списка
-        self.tail = tail  # Ссылка на конечный элемент двусвязного списка
+        self.__head = head  # Ссылка на начальный элемент двусвязного списка
+        self.__tail = tail  # Ссылка на конечный элемент двусвязного списка
 
     def __str__(self):
-        return f"{self.head}"
+        return f"{self.__head}"
 
-    def info(self): # Выводит информацию о списке
-        curr = self.head
+    def info(self):  # Выводит информацию о списке
+        curr = self.__head
         while curr is not None:
             print(f"Значение - {curr.data}\n"
                   f"{curr.prev.data if curr.prev else None} -> X -> "
@@ -26,29 +26,29 @@ class DLinkedList:  # Двусвязный список
 
     def push_back(self, data):  # Добавление элемента в конец списка O(1)
         nd = Node(data)
-        self.tail.next = nd
-        nd.prev = self.tail
-        self.tail = nd
+        self.__tail.next = nd
+        nd.prev = self.__tail
+        self.__tail = nd
 
     def push_front(self, data):  # Добавление элемента в начало списка O(1)
         nd = Node(data)
-        self.head.prev = nd
-        nd.next = self.head
-        self.head = nd
+        self.__head.prev = nd
+        nd.next = self.__head
+        self.__head = nd
 
     def pop_back(self):  # Удаление элемента в конце списка O(1)
-        nd = self.tail.prev
+        nd = self.__tail.prev
         nd.next = None
-        self.tail = nd
+        self.__tail = nd
 
     def pop_front(self):  # Удаление элемента в начале списка O(1)
-        self.head = self.head.next
-        self.head.prev = None
+        self.__head = self.__head.next
+        self.__head.prev = None
 
     def insert(self, index, data):  # Вставка элемента в любое место списка, кроме начала и конца O(n)
         i = 0
         nd = Node(data)
-        previous, curr = None, self.head
+        previous, curr = None, self.__head
         while i < index:
             previous, curr = curr, curr.next
             i += 1
@@ -59,7 +59,7 @@ class DLinkedList:  # Двусвязный список
 
     def erase(self, index):  # Удаление элемента в любом месте списка, кроме начала и конца O(n)
         i = 0
-        previous, curr = None, self.head
+        previous, curr = None, self.__head
         while i < index:
             previous, curr = curr, curr.next
             i += 1
@@ -68,7 +68,7 @@ class DLinkedList:  # Двусвязный список
 
     def at(self, index):  # Доступ к элементу по индексу O(n)
         i = 0
-        el = self.head
+        el = self.__head
         while i < index:
             if el.next is None:
                 break
@@ -77,8 +77,8 @@ class DLinkedList:  # Двусвязный список
         return el
 
     def __reversed__(self):  # Разворот списка O(n)
-        self.head, self.tail = self.tail, self.head
-        curr = self.head
+        self.__head, self.__tail = self.__tail, self.__head
+        curr = self.__head
         while True:
             curr.next, curr.prev = curr.prev, curr.next
             if curr.next is None:
@@ -87,12 +87,12 @@ class DLinkedList:  # Двусвязный список
 
     def join(self, other):  # Слияние двусвязных списков O(n + m)
         if isinstance(other, DLinkedList):
-            if self.head.data < other.head.data:
-                temp_head = self.head
-                c1, c2 = self.head.next, other.head
+            if self.__head.data < other.__head.data:
+                temp_head = self.__head
+                c1, c2 = self.__head.next, other.__head
             else:
-                temp_head = other.head
-                c1, c2 = self.head, other.head.next
+                temp_head = other.__head
+                c1, c2 = self.__head, other.__head.next
             c = temp_head
             while c1 is not None and c2 is not None:
                 if c1.data < c2.data:
@@ -114,7 +114,7 @@ class DLinkedList:  # Двусвязный список
         return NotImplemented
 
     def is_palindrome(self):  # Проверка, является ли палиндромом O(n)
-        c1, c2 = self.head, self.tail
+        c1, c2 = self.__head, self.__tail
         while True:
             if c1.data != c2.data:
                 return False
@@ -122,8 +122,8 @@ class DLinkedList:  # Двусвязный список
                 return True
             c1, c2 = c1.next, c2.prev
 
-    def unique(self): # Убирает повторения в списке O(n)
-        c, n = self.head, self.head.next
+    def unique(self):  # Убирает повторения в списке O(n)
+        c, n = self.__head, self.__head.next
         d = {c.data: 1}
         while n is not None:
             item = d.get(n.data, None)
@@ -134,10 +134,10 @@ class DLinkedList:  # Двусвязный список
                 n = n.next
                 c.next = n
                 n.prev = c
-        self.tail = c
+        self.__tail = c
 
-    def get_middle(self): # Средний элемент O(n)
-        c1, c2 = self.head, self.tail
+    def get_middle(self):  # Средний элемент O(n)
+        c1, c2 = self.__head, self.__tail
         while c1 is not None:
             if c1 is c2:
                 return c1.data
