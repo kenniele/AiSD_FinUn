@@ -69,21 +69,47 @@ class BinaryTree:
 
     def min(self, cur):  # Поиск минимума O(n)
         if cur is None:
-            return float("inf") # Если вершина пустая, то приравниваем наибольшее возможное значение
+            return float("inf")  # Если вершина пустая, то приравниваем наибольшее возможное значение
         return min(cur.data, self.min(cur.left), self.min(cur.right))  # Рекурсивно идем по ветвям
 
     def max(self, cur):  # Поиск максимума O(n)
         if cur is None:
-            return float("-inf") # Если вершина пустая, то приравниваем наименьшее возможное значение
+            return float("-inf")  # Если вершина пустая, то приравниваем наименьшее возможное значение
         return max(cur.data, self.max(cur.left), self.max(cur.right))  # Рекурсивно идем по ветвям
 
+    def is_search(self, cur):  # Проверяет, является ли бинарное дерево бинарным деревом поиска O(n)
+        if cur is None:
+            return True
+        if (cur.left and cur.left.data >= cur.data) or (cur.right and cur.right.data <= cur.data):
+            return False
+        return self.is_search(cur.left) and self.is_search(cur.right)
+
+    def max_depth(self):  # Показывает количество уровней O(n)
+        return max(self.get_height(self.root.left), self.get_height(self.root.right)) + 1
+
+    def sum(self):  # Сумма всех элементов бинарного дерева O(n)
+        cur = self.root
+        v = [cur]
+        s = 0
+        while len(v) > 0:
+            vm = []
+            for el in v:
+                s += el.data
+                if el.left is not None:
+                    vm.append(el.left)
+                if el.right is not None:
+                    vm.append(el.right)
+            v = vm
+        return s
+
+
 nd1 = Node(5)
-nd2 = Node(10)
+nd2 = Node(4)
 nd3 = Node(3)
-nd4 = Node(4)
+nd4 = Node(1)
 nd1.right = nd2
 nd1.left = nd3
 nd3.left = nd4
 bin = BinaryTree(nd1)
 
-print(bin.is_searching())
+print(bin.sum())
