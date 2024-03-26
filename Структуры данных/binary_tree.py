@@ -15,6 +15,21 @@ class BinaryTree:
     def __str__(self):
         return f"BinaryTree: {self.root}"
 
+    def append(self, nd, root=None):  # Функция добавления элемента (корректно только для дерева поиска) O(logn)
+        if root is None:
+            root = self.root
+        curr = root
+        if nd.data > curr.data:
+            if curr.right is None:
+                curr.right = nd
+            else:
+                self.append(nd, root=curr.right)
+        else:
+            if curr.left is None:
+                curr.left = nd
+            else:
+                self.append(nd, root=curr.left)
+
     def search(self, val):  # Функция поиска элемента в бинарном дереве O(logn) -> O(n)
         cur = self.root
         while True:
@@ -41,6 +56,7 @@ class BinaryTree:
             v = vm
 
     def depth_first_search(self, cur, style="lnr"):  # Функция обхода дерева в глубину O(n)
+        #  style - стиль обхода дерева, l - left, r - right, n - node
         if cur is not None:
             if style == "lnr":
                 self.depth_first_search(cur.left, "lnr")
@@ -104,7 +120,7 @@ class BinaryTree:
 
 
 nd1 = Node(5)
-nd2 = Node(4)
+nd2 = Node(7)
 nd3 = Node(3)
 nd4 = Node(1)
 nd1.right = nd2
@@ -112,4 +128,5 @@ nd1.left = nd3
 nd3.left = nd4
 bin = BinaryTree(nd1)
 
-print(bin.sum())
+bin.append(Node(10))
+print(bin.root.right)
