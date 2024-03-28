@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dda26167-97b2-4411-80f4-e6e4911b7159" name="Changes" comment="xx">
+    <list default="true" id="dda26167-97b2-4411-80f4-e6e4911b7159" name="Changes" comment="fix again theory.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Сортировки/sorts.md" beforeDir="false" afterPath="$PROJECT_DIR$/Сортировки/sorts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Алгоритмы/algoritms.md" beforeDir="false" afterPath="$PROJECT_DIR$/Алгоритмы/algoritms.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Структуры данных/binary_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/binary_tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Структуры данных/data_structures.md" beforeDir="false" afterPath="$PROJECT_DIR$/Структуры данных/data_structures.md" afterDir="false" />
     </list>
@@ -62,6 +62,7 @@
     &quot;Python.bubble_sort.executor&quot;: &quot;Run&quot;,
     &quot;Python.countsort.executor&quot;: &quot;Run&quot;,
     &quot;Python.dlinked_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.graph.executor&quot;: &quot;Run&quot;,
     &quot;Python.hoar_sort.executor&quot;: &quot;Run&quot;,
     &quot;Python.insertion_sort.executor&quot;: &quot;Run&quot;,
     &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
@@ -102,7 +103,8 @@
       <workItem from="1710932950722" duration="7303000" />
       <workItem from="1710957739942" duration="3356000" />
       <workItem from="1711081991796" duration="33163000" />
-      <workItem from="1711431289638" duration="5139000" />
+      <workItem from="1711431289638" duration="11944000" />
+      <workItem from="1711614940305" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -208,7 +210,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711431910182</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed some, add theory">
+      <option name="closed" value="true" />
+      <created>1711437706747</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711437706747</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix theory.md">
+      <option name="closed" value="true" />
+      <created>1711437779952</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711437779952</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix again theory.md">
+      <option name="closed" value="true" />
+      <created>1711437852167</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711437852167</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +251,10 @@
     <MESSAGE value="upd binary tree v1" />
     <MESSAGE value="latext test" />
     <MESSAGE value="xx" />
-    <option name="LAST_COMMIT_MESSAGE" value="xx" />
+    <MESSAGE value="fixed some, add theory" />
+    <MESSAGE value="fix theory.md" />
+    <MESSAGE value="fix again theory.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix again theory.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AiSD_FinUn$countsort.coverage" NAME="countsort Coverage Results" MODIFIED="1710935420575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
@@ -237,6 +266,7 @@
     <SUITE FILE_PATH="coverage/AiSD_FinUn$stack_linked_list.coverage" NAME="stack_linked_list Coverage Results" MODIFIED="1711120913353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$linked_list.coverage" NAME="linked_list Coverage Results" MODIFIED="1710937500056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1711108036776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
+    <SUITE FILE_PATH="coverage/AiSD_FinUn$graph.coverage" NAME="graph Coverage Results" MODIFIED="1711540000126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$bubble_sort.coverage" NAME="bubble_sort Coverage Results" MODIFIED="1710933826223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$hoar_sort.coverage" NAME="hoar_sort Coverage Results" MODIFIED="1710935124749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Сортировки" />
     <SUITE FILE_PATH="coverage/AiSD_FinUn$queue_list.coverage" NAME="queue_list Coverage Results" MODIFIED="1711119667895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Структуры данных" />

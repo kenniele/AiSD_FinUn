@@ -1,8 +1,9 @@
 class Node:
-    def __init__(self, data, left=None, right=None):
+    def __init__(self, data, left=None, right=None, parent=None):
         self.data = data
         self.left = left
         self.right = right
+        self.parent = parent
 
     def __str__(self):
         return f"\nNode: {self.data}, left: {self.left}, right: {self.right}"
@@ -22,11 +23,13 @@ class BinaryTree:
         if nd.data > curr.data:
             if curr.right is None:
                 curr.right = nd
+                curr.parent = nd
             else:
                 self.append(nd, root=curr.right)
         else:
             if curr.left is None:
                 curr.left = nd
+                curr.parent = nd
             else:
                 self.append(nd, root=curr.left)
 
@@ -126,6 +129,9 @@ nd4 = Node(1)
 nd1.right = nd2
 nd1.left = nd3
 nd3.left = nd4
+nd2.parent = nd1
+nd3.parent = nd1
+nd4.parent = nd3
 bin = BinaryTree(nd1)
 
 bin.append(Node(10))
